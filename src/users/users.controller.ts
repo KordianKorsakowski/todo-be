@@ -2,7 +2,7 @@ import { Controller } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { AuthService } from './auth.service';
 
-@Controller('users')
+@Controller('auth')
 export class UsersController {
     constructor(
         private usersService: UsersService,
