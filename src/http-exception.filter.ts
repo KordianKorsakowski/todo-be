@@ -22,7 +22,7 @@ export class HttpExceptionFilter implements ExceptionFilter<HttpException> {
       statusCode,
       timestamp: new Date().toISOString(),
       path: request.url,
-      message: res['message'].join(' '),
+      message: res['message'],
     });
   }
 }
