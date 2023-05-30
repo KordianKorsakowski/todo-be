@@ -1,3 +1,4 @@
+
 import { Todos } from 'src/todos/todos.entity';
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
@@ -14,3 +15,4 @@ export class Users {
   @OneToMany(() => Todos, (todo) => todo.user)
   todos: Todos[];
 }
+ 

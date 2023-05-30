@@ -10,8 +10,8 @@ export class Todos {
     priority: "low"|"medium"|"high";
     @Column()
     description: string;
-    @Column({default: new Date()})
-    date: Date;
+    @Column()
+    date: string;
     @ManyToOne(() => Users, (user) => user.todos)
     user: Users;
 }
